@@ -662,9 +662,9 @@ button {
 .clients-icon {
   fill: currentColor;
 }
-/* постійні клієнти кінець */
+/* ---------------постійні клієнти кінець----------- */
 
-/* modal start */
+/* ----------------------modal start-------------------- */
 .backdrop {
   position: fixed;
   top: 0;
@@ -712,14 +712,106 @@ button {
   align-items: center;
   justify-content: center;
 
+  font-size: 16px;
+
   padding: 0;
   background-color: var(--light-txt-cl);
   border: 1px solid var(--hero-bg-cl);
   border-radius: 50%;
 
   cursor: pointer;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* modal end */
+
+.modal-btn:hover,
+.modal-btn:focus {
+  color: var(--accent-txt-cl);
+}
+
+.subscription-form-title {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  text-align: center;
+
+  color: var(--dark-txt-cl);
+}
+
+.subscription-form-group {
+}
+.subscription-form-field {
+  position: relative;
+}
+.subscription-form-label {
+  display: block;
+
+  margin-left: 40px;
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: calc(14 / 12);
+
+  letter-spacing: 0.01em;
+}
+.subscription-form-input {
+  display: block;
+
+  width: 448px;
+  height: 40px;
+  margin: 0 auto 10px auto;
+  padding: 0 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.subscription-form-icon {
+  position: absolute;
+
+  left: 55px;
+  bottom: 11px;
+}
+
+.subscription-form-heading {
+  display: block;
+
+  margin-left: 40px;
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: calc(14 / 12);
+
+  letter-spacing: 0.01em;
+}
+
+.subscription-form-message {
+  display: block;
+
+  margin: 0 auto;
+  padding: 12px 16px;
+
+  resize: none;
+
+  width: 448px;
+  height: 120px;
+
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.subscription-form-message::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+/* ----------------------modal end----------------------- */
 
 /* -------------------PORTFOLIO START------------------- */
 
