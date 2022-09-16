@@ -351,6 +351,74 @@ button {
 .footer-socials-icon {
   fill: currentColor;
 }
+
+.footer-email {
+  margin-left: 93px;
+}
+
+.footer-email-wrapper {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.footer-email-input {
+  width: 358px;
+  height: 50px;
+
+  padding: 15px 16px;
+
+  border: 1px solid var(--main-txt-cl);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: transparent;
+
+  background-color: transparent;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+
+  color: var(--light-txt-cl);
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-email-input:focus {
+  border-color: var(--accent-txt-cl);
+}
+
+.footer-email-btn {
+  display: flex;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--light-txt-cl);
+  background-color: var(--accent-txt-cl);
+
+  min-width: 200px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  gap: 10px;
+}
+.footer-email-icon {
+}
+
 /* кінець футер */
 
 /* початок герой */
@@ -768,12 +836,27 @@ button {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  outline: transparent;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.subscription-form-input:focus {
+  border-color: var(--accent-txt-cl);
+}
+
+.subscription-form-input:focus + .subscription-form-icon {
+  fill: var(--accent-txt-cl);
+}
+
 .subscription-form-icon {
   position: absolute;
 
   left: 55px;
   bottom: 11px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscription-form-heading {
@@ -791,7 +874,7 @@ button {
 .subscription-form-message {
   display: block;
 
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
   padding: 12px 16px;
 
   resize: none;
@@ -805,10 +888,87 @@ button {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: transparent;
+}
+
+.subscription-form-message:focus {
+  border-color: var(--accent-txt-cl);
 }
 
 .subscription-form-message::placeholder {
   color: rgba(117, 117, 117, 0.5);
+}
+
+.subscription-form-agreement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 30px;
+  gap: 8px;
+}
+
+.subscription-form-icons {
+}
+.icon-checked {
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-unchecked {
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscription-form-checkbox:checked + .subscription-form-icons .icon-checked {
+  opacity: 1;
+}
+
+.subscription-form-checkbox:checked + .subscription-form-icons .icon-unchecked {
+  opacity: 0;
+}
+
+.subscription-form-checkbox:focus + .subscription-form-icons {
+  outline: 1px solid;
+  outline-offset: 1px;
+  border-radius: 1px;
+}
+
+.subscription-form-link {
+  display: inline-block;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px calc(24 / 14);
+
+  letter-spacing: 0.03em;
+
+  color: var(--accent-txt-cl);
+
+  border-bottom: 1px solid currentColor;
+  line-height: 0.75;
+}
+
+.subscription-form-btn {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+
+  /* display: flex; */
+  align-items: center;
+  letter-spacing: 0.06em;
+
+  color: var(--light-txt-cl);
+  background-color: var(--accent-txt-cl);
+
+  min-width: 216px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* ----------------------modal end----------------------- */
