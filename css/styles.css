@@ -74,6 +74,9 @@ button {
   border-radius: 4px;
 }
 
+.btn-anim {
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -353,7 +356,7 @@ button {
 }
 
 .footer-email {
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .footer-email-wrapper {
@@ -388,6 +391,10 @@ button {
 }
 
 .footer-email-input:focus {
+  border-color: var(--accent-txt-cl);
+}
+
+.footer-email-input:hover {
   border-color: var(--accent-txt-cl);
 }
 
@@ -797,9 +804,12 @@ button {
   color: var(--accent-txt-cl);
 }
 
+.subscription-form {
+  padding: 40px;
+}
+
 .subscription-form-title {
   display: block;
-  margin-top: 40px;
   margin-bottom: 12px;
 
   font-weight: 700;
@@ -811,14 +821,17 @@ button {
 }
 
 .subscription-form-group {
+  margin-bottom: 20px;
 }
 .subscription-form-field {
   position: relative;
+
+  display: block;
+  margin-bottom: 10px;
 }
 .subscription-form-label {
   display: block;
 
-  margin-left: 40px;
   margin-bottom: 4px;
 
   font-size: 12px;
@@ -829,9 +842,9 @@ button {
 .subscription-form-input {
   display: block;
 
-  width: 448px;
+  width: 100%;
   height: 40px;
-  margin: 0 auto 10px auto;
+  margin: 0 auto 0px auto;
   padding: 0 42px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -846,15 +859,23 @@ button {
   border-color: var(--accent-txt-cl);
 }
 
+.subscription-form-input:hover {
+  border-color: var(--accent-txt-cl);
+}
+
 .subscription-form-input:focus + .subscription-form-icon {
+  fill: var(--accent-txt-cl);
+}
+
+.subscription-form-input:hover + .subscription-form-icon {
   fill: var(--accent-txt-cl);
 }
 
 .subscription-form-icon {
   position: absolute;
 
-  left: 55px;
-  bottom: 11px;
+  left: 12px;
+  top: 50%;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -862,7 +883,6 @@ button {
 .subscription-form-heading {
   display: block;
 
-  margin-left: 40px;
   margin-bottom: 4px;
 
   font-size: 12px;
@@ -874,12 +894,12 @@ button {
 .subscription-form-message {
   display: block;
 
-  margin: 0 auto 20px auto;
+  margin: 0 auto;
   padding: 12px 16px;
 
   resize: none;
 
-  width: 448px;
+  width: 100%;
   height: 120px;
 
   font-size: 12px;
@@ -889,9 +909,15 @@ button {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: transparent;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscription-form-message:focus {
+  border-color: var(--accent-txt-cl);
+}
+
+.subscription-form-message:hover {
   border-color: var(--accent-txt-cl);
 }
 
@@ -909,6 +935,7 @@ button {
 }
 
 .subscription-form-icons {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-checked {
   opacity: 0;
@@ -917,6 +944,9 @@ button {
 
 .icon-unchecked {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscription-form-checkbox {
 }
 
 .subscription-form-checkbox:checked + .subscription-form-icons .icon-checked {
@@ -931,6 +961,10 @@ button {
   outline: 1px solid;
   outline-offset: 1px;
   border-radius: 1px;
+}
+
+.subscription-form-agreement:hover .subscription-form-icons {
+  fill: var(--accent-txt-cl);
 }
 
 .subscription-form-link {
